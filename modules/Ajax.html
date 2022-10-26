@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX</title>
+    </head>
+    <body>
+        <p id="demo">Ajax to load data</p>
+        <button onclick="loaddata()">Click</button>
+    </body>
+    <script>
+        function loaddata(){
+    var vrb=new XMLHttpRequest();
+    vrb.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200){
+            document.getElementById("demo").innerHTML=this.responseText;
+        }
+        else if(this.readyState==4 && this.status==404){
+            document.getElementById("demo").innerHTML="File not found";
+        }
+    };
+    vrb.open('GET',"https://jsonplaceholder.typicode.com/posts",true);
+    vrb.send();
+
+}
+    </script>
+</html>

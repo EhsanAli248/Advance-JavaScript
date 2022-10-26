@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        try{
+           let dummy; 
+          ghk
+
+        }catch(error){
+            if(error instanceof ReferenceError){
+                console.log('Reference Error');
+            }
+           else if(error instanceof SyntaxError){
+                console.log('syntax error Error');
+            }
+           else if(error instanceof TypeError){
+                console.log('type Error');
+            }
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
+    </script>
+</html>

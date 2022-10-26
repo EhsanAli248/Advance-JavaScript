@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rest Operator</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+    function sum(name,course,...val){
+        let sum=0;
+        document.write(`Hello and Welcome ${name} ${course} your total score is :`);
+        for (let i in val){
+            sum+=val[i];
+        }
+        document.write(sum+"<br>");
+    }
+    sum("Ehsan Ali","BSIT",40,50,60);
+    sum("Adeel Ch","BSIT",40,150);
+    sum("Hassan Ali","BSIT",400,50,60,250,350);
+
+    </script>
+</html>

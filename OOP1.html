@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OOP Introduction</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+    class student{
+        constructor(name,age){
+            this.studentname=name;
+            this.studentage=age;
+            document.write("constructor called<br>");
+        }
+        hello(){
+            document.write(`Hello ${this.studentname} your age is ${this.studentage}<br>`);
+        }
+        static fun(){
+            document.write("static function called");
+        }
+    }
+    let obj=new student("Ehsan Ali",27);
+    let obj1=new student("Ali Baba",26);
+
+    
+    obj.hello();
+    obj1.hello(); //prototype method or function
+    student.fun();// static fucntion is always called with class name not with object name
+    // -------------------------------------------------------------------
+
+    // class student{
+    //     constructor(){
+    //         
+    //         document.write("constructor called<br>");
+    //     }
+    //     hello(){
+    //         document.write(`Hello ${obj.name} your age is ${obj.age}<br>`);
+    //     }
+    // }
+    
+    // let obj=new student();
+    // obj.name="Ehsan Ali";
+    // obj.age=25;
+    // obj1.name="Ali Baba";
+    // obj1.age=25;
+    // obj.hello();
+    // obj1.hello();
+    </script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spread Operator</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+    // function sum(name,course,...val){
+    //     let sum=0;
+    //     document.write(`Hello and Welcome ${name} ${course} your total score is :`);
+    //     for (let i in val){
+    //         sum+=val[i];
+    //     }
+    //     document.write(sum+"<br>");
+    // }
+    // var arr=[20,30,40,50,10];
+    // sum("Ehsan Ali","BSIT",...arr);
+    // sum("Adeel Ch","BSIT",...arr);
+    // sum("Hassan Ali","BSIT",...arr);
+    var arr1=[10,20,30,40];
+    var arr2=[50,60,70];
+    // var arr3=arr1.concat(arr2);
+   // var arr3=arr2.concat(arr1);// sequence of value will be change
+    var arr3=[...arr1,...arr2];//array concatination with spread operator
+    var arr3=[...arr2,...arr1];//sequence of value will be change
+    var arr3=[5,...arr2,...arr1,10]; // we can push element without push function
+    document.write(arr3+"<br>");
+    
+    var obj1={
+        name:"Ehsan Ali",
+        cour:"JS"
+    };
+    var obj2={
+        course:23
+    };
+    var obj3={...obj1,...obj2};
+    
+     document.write(obj3.name);
+    console.log(obj3);
+
+    </script>
+</html>

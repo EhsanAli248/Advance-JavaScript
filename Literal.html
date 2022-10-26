@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Literals</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        //   let n="student";
+        //   console.log(n);
+        //   let obj={
+        //     [n+ "name"]:"Ehsan Ali",
+        //     degree: "BSIT",
+        //     detail:function(){
+        //         return `${this.studentname} is student of ${this.degree}`;
+        //     }
+        //   };
+        //   console.log(obj);
+        //  // document.write(obj.student);
+        //  console.log(obj.detail());
+        // -----------------------------------------------
+        //  let n="student";
+        //   console.log(n);
+        //   let obj={
+        //     [n+ "name"]:"Ehsan Ali",
+        //     degree: "BSIT",
+        //     detail(){
+        //         return `${this.studentname} is student of ${this.degree}`;
+        //     }
+        //   };
+        //   console.log(obj);
+        //  // document.write(obj.student);
+        //  console.log(obj['detail']());
+        //  ---------------------------------------------------------
+        let fname="Ehsan";
+        let lname="Ali";
+        let degree="BSIT";
+    
+        function student(fn,ln,deg){
+            let fullname=fname+" "+lname;
+            return {fullname,degree}
+        }
+        console.log(student(fname,lname,degree));
+        let obj=student(fname,lname,degree);
+        console.log(obj.fname);
+        console.log(obj.lname);
+        console.log(obj.fullname);
+        console.log(obj.degree);
+    </script>
+</html>.

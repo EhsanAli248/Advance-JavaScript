@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destructing Array</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+    // let user=["Ehsan",25,"Lahore","Male"];
+    // let [name,age,city,gender]=user;
+    // console.log(name);
+    // console.log(age);
+    // console.log(city);
+    // console.log(gender);
+    // -----------------------------------
+    // let user=["Ehsan",25,"Lahore","Male"];
+    // let [name,...args]=user;
+    // console.log(name);
+    // console.log(args);
+
+    // ----------------------------------------
+    
+    function user(name,age,city,gender){
+        return ["Ehsan",24,"Lahore","Male"];
+    }
+    let [name,age,city,gender]=user();
+    console.log(name);
+    console.log(gender);
+
+    </script>
+</html>
